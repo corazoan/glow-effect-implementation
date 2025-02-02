@@ -68,7 +68,7 @@ function App() {
             </div>
           </div>
         </nav>
-        <div className="w-[100%] pb-8 flex flex-col  h-full">
+        <div className="w-[100%] flex flex-col  h-[calc(100%-64px)]">
           <div className="h-[64px] flex items-center p-4 w-full border-b-0 md:border-b border-primary/10">
             <h1 className="text-3xl">
               Intergations<span className="text-sm mx-1">(32)</span>
@@ -86,8 +86,83 @@ function App() {
               ))}
             </div>
           </div>
-          <div className="flex p-2 flex-wrap   md:p-8   gap-y-4 text-gray-200 overflow-scroll w-full">
-            <div className="w-[30%]  rounded-xl   border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
+          <div className="flex p-2 flex-wrap md:gap-x-4 md:justify-between  md:p-8   gap-y-4 text-gray-200 overflow-scroll w-full">
+            <div className="w-[96%] md:w-[40%] lg:w-[30%]  mx-auto md:m-0 rounded-xl border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
+              <div className="gap-y-4 flex flex-col p-8 border-b border-primary/10">
+                <button className="p-2 w-fit bg-white/10 rounded-xl">
+                  <Github />
+                </button>
+                <div className="flex justify-between items-center">
+                  <h1 className="text-4xl md:text-xl lg:text-4xl">Github</h1>
+                  <button className=" rounded-full px-4 py-2 bg-white/10">
+                    Automation
+                  </button>
+                </div>
+                <p className="text-gray-400">
+                  GitHub, Inc. is an AI-powered developer platefrom that allow
+                  developer to create, store and manage code.
+                </p>
+              </div>
+              <div className="flex justify-between py-2 px-8 ">
+                <div className="flex  justify-center items-center gap-x-2 ">
+                  <Setting />
+                  <a href="" className="text-xl text-gray-400 underline">
+                    Configure App
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-[96%] md:w-[40%] lg:w-[30%] mx-auto md:m-0 rounded-xl border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
+              <div className="gap-y-4 flex flex-col p-8 border-b border-primary/10">
+                <button className="p-2 w-fit bg-white/10 rounded-xl">
+                  <Github />
+                </button>
+                <div className="flex justify-between items-center">
+                  <h1 className="text-4xl md:text-xl lg:text-4xl">Github</h1>
+                  <button className=" rounded-full px-4 py-2 bg-white/10">
+                    Automation
+                  </button>
+                </div>
+                <p className="text-gray-400">
+                  GitHub, Inc. is an AI-powered developer platefrom that allow
+                  developer to create, store and manage code.
+                </p>
+              </div>
+              <div className="flex justify-between py-2 px-8 ">
+                <div className="flex  justify-center items-center gap-x-2 ">
+                  <Setting />
+                  <a href="" className="text-xl text-gray-400 underline">
+                    Configure App
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-[96%] md:w-[40%] lg:w-[30%] mx-auto md:m-0 rounded-xl border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
+              <div className="gap-y-4 flex flex-col p-8 border-b border-primary/10">
+                <button className="p-2 w-fit bg-white/10 rounded-xl">
+                  <Github />
+                </button>
+                <div className="flex justify-between items-center">
+                  <h1 className="text-4xl md:text-xl lg:text-4xl">Github</h1>
+                  <button className=" rounded-full px-4 py-2 bg-white/10">
+                    Automation
+                  </button>
+                </div>
+                <p className="text-gray-400">
+                  GitHub, Inc. is an AI-powered developer platefrom that allow
+                  developer to create, store and manage code.
+                </p>
+              </div>
+              <div className="flex justify-between py-2 px-8 ">
+                <div className="flex  justify-center items-center gap-x-2 ">
+                  <Setting />
+                  <a href="" className="text-xl text-gray-400 underline">
+                    Configure App
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-[96%] md:w-[40%] lg:w-[30%] mx-auto md:m-0 rounded-xl border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
               <div className="gap-y-4 flex flex-col p-8 border-b border-primary/10">
                 <button className="p-2 w-fit bg-white/10 rounded-xl">
                   <Github />
@@ -112,32 +187,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="w-[30%]  rounded-xl   border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
-              <div className="gap-y-4 flex flex-col p-8 border-b border-primary/10">
-                <button className="p-2 w-fit bg-white/10 rounded-xl">
-                  <Github />
-                </button>
-                <div className="flex justify-between items-center">
-                  <h1 className="text-4xl">Github</h1>
-                  <button className=" rounded-full px-4 py-2 bg-white/10">
-                    Automation
-                  </button>
-                </div>
-                <p className="text-gray-400">
-                  GitHub, Inc. is an AI-powered developer platefrom that allow
-                  developer to create, store and manage code.
-                </p>
-              </div>
-              <div className="flex justify-between py-2 px-8 ">
-                <div className="flex  justify-center items-center gap-x-2 ">
-                  <Setting />
-                  <a href="" className="text-xl text-gray-400 underline">
-                    Configure App
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="w-[30%]  rounded-xl   border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
+            <div className="w-[96%] md:w-[40%] lg:w-[30%] mx-auto md:m-0 rounded-xl border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
               <div className="gap-y-4 flex flex-col p-8 border-b border-primary/10">
                 <button className="p-2 w-fit bg-white/10 rounded-xl">
                   <Github />
@@ -163,7 +213,7 @@ function App() {
               </div>
             </div>
 
-            <div className="w-[30%]  rounded-xl   border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
+            <div className="w-[96%] md:w-[40%] lg:w-[30%] mx-auto md:m-0 rounded-xl border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
               <div className="gap-y-4 flex flex-col p-8 border-b border-primary/10">
                 <button className="p-2 w-fit bg-white/10 rounded-xl">
                   <Github />
@@ -189,7 +239,7 @@ function App() {
               </div>
             </div>
 
-            <div className="w-[30%]  rounded-xl   border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
+            <div className="w-[96%] md:w-[40%] lg:w-[30%] mx-auto md:m-0 rounded-xl border-1 border-primary/10 bg-linear-to-b from-white/10 to-black-10 ">
               <div className="gap-y-4 flex flex-col p-8 border-b border-primary/10">
                 <button className="p-2 w-fit bg-white/10 rounded-xl">
                   <Github />
