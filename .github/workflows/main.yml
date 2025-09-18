@@ -1,0 +1,33 @@
+name: Mirror to GitLab
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  push_to_gitlab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # get full history
+
+      - name: Verify secrets exist
+        run: |
+          if [ -z "${{ secrets.GITLAB_USERNAME }}" ]; then
+            echo "Error: GITLAB_USERNAME secret is not set"
+            exit 1
+          fi
+          if [ -z "${{ secrets.GITLAB_TOKEN }}" ]; then
+            echo "Error: GITLAB_TOKEN secret is not set"
+            exit 1
+          fi
+
+      - name: Push to GitLab
+        env:
+          GITLAB_URL: https://${{ secrets.GITLAB_USERNAME }}:${{ secrets.GITLAB_TOKEN }}@gitlab.com/${{ secrets.GITLAB_USERNAME }}/glow-effect-implementation.git
+        run: |
+          git remote add gitlab "$GITLAB_URL"
+          git push gitlab --all
