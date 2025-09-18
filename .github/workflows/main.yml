@@ -30,4 +30,4 @@ jobs:
           GITLAB_URL: "https://ci-user:${{ secrets.GITLAB_TOKEN }}@gitlab.com/anujgupta4155/glow-effect-implementation.git"
         run: |
           git remote add gitlab "$GITLAB_URL"
-          git push gitlab --all --force
+          git push gitlab --all 
